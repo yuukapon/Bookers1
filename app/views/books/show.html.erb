@@ -1,0 +1,20 @@
+<%= flash[:notice] %>
+
+<body>
+    <p id="notice"></p>
+
+    <p>
+        <strong>Title:</strong> <!-- strong = 太字 -->
+        <%= @book.title %>
+    </p>
+
+    <p>
+        <strong>Body:</strong> <!-- strong = 太字 -->
+        <%= @book.body %>
+    </p>
+
+    <p>
+        <%= link_to "Edit", edit_book_path(@book.id) %>
+        <%= link_to "Back", books_path %>
+    </p>
+</body>
